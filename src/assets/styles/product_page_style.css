@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #FFFFFF;
+}
+.container {
+    max-width: 75%;
+    background: #ffffff;;
+    margin: 0 auto 50px;
+
+}
+
+
+.product-image img{
+    width: 400px;
+    height: 400px;
+    background: rgba(0,0,0,.06);
+}
+
+
+.info{
+    display: flex;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.container .product-title{
+    display: block;
+    margin-left: 50%;
+}
+
+.container .product-title h1{
+    margin-bottom: 20px;
+
+}
+
+.product-description{
+    display: inline-block;
+    padding: 1em 15px 1em 50px;
+    font: 1.1em Tahoma,Helvetica,sans-serif;
+    width: 400px;
+}
+
+.product-description .manufacturer {
+    margin-bottom: 220px;
+}
+
+.product-description div{
+    margin-bottom: 20px;
+}
+
+.product-about {
+    margin-left: 50px;
+    font: 1em Arial,sans-serif;
+    color: #333;
+    width: 600px
+}
+
+.buying {
+    border-top: 1px solid #c0bfbf;
+    margin: 10px -15px 10px -18px;
+    padding: 10px 15px 10px 18px;
+}
+
+.buying-pricenew-val img {
+    position: relative;
+    top: 6px;
+    width: 25px;
+    height: 25px;
+}
+
+
+.btn {
+    background-color: rgba(255, 145, 0, 0.47);
+    border: #FF910077;
+    color: #F0FFFF;
+    font-size: 15px;
+    border-radius: 15px;
+
+    padding: 4px 6px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: inherit;
+    font-family: PTSans,Helvetica,sans-serif;
+
+    line-height: 40px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn:hover{
+    box-shadow: 15px 15px 15px rgba(255, 145, 0, 0.27);
+    transition: border 500ms .500ms, box-shadow 500ms .500ms;
+    border: 2px solid rgba(255, 145, 0, 0.2)
+}
