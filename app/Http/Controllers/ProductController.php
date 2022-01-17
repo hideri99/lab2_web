@@ -10,7 +10,6 @@ use Illuminate\Routing\Controller;
  */
 class ProductController extends Controller
 {
-
     /**
      * Список товаров.
      * @return array

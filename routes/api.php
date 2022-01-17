@@ -18,16 +18,17 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::prefix('user')->group(function(){
+    Route::post('/', [\App\Http\Controllers\UserController::class, 'authorization']);
+});
+
+Route::prefix('cart')->group(function(){
+    Route::post('/', [\App\Http\Controllers\CartController::class, 'addToCart']);
+    Route::get('/{userId}', [\App\Http\Controllers\CartController::class, 'info']);
+});
+
 Route::prefix('products')->group(function(){
     Route::get('/', [\app\Http\Controllers\ProductController::class, 'list']);
     Route::get('/{id}', [\App\Http\Controllers\ProductController::class, 'info']);
 });
 
-Route::prefix('cart')->group(function(){
-    Route::get('/{userId}', [\App\Http\Controllers\CartController::class, 'info']);
-    Route::post('/', [\App\Http\Controllers\CartController::class, 'addToCart']);
-});
-
-Route::prefix('user')->group(function(){
-    Route::post('/', [\App\Http\Controllers\UserController::class, 'authorization']);
-});
