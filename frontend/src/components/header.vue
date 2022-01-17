@@ -8,7 +8,7 @@
     <img src = "../assets/images/auto.png" alt ="auto" />
 
 
-    <nav><a href="https://emex.ru/"> <h2>О нас</h2>  </a> <a href="#"><h2>Корзина</h2>  </a></nav>
+    <nav><a href="https://emex.ru/"> <h2>О нас</h2>  </a> <a href="#"><h2>Корзина<app-cart></app-cart></h2>  </a></nav>
 
   </header>
 </template>
