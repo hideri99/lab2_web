@@ -46,7 +46,7 @@ class CartService
 
     public function getCart()
     {
-        $cart = Cart::query()->first();
+        $cart = Cart::query()->where(['id' => $userId])->first();
 
         if ($cart === NULL)
         {

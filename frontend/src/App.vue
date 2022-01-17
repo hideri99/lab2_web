@@ -9,8 +9,6 @@ body {
   margin:0;
   padding:0;
   font-family:sans-serif;
-  /*background: radial-gradient(#f69d3c, #3f87a6);*/
-  /*background: #F0FFFF;*/
 
 }
 html{
@@ -25,7 +23,7 @@ html{
 <script>
 import main from "@/components/main";
 export default {
-  // eslint-disable-next-line vue/no-unused-components
+    // eslint-disable-next-line vue/no-unused-components
   components: {main}
 }
 </script>
